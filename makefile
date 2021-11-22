@@ -7,7 +7,7 @@ FLAGS= -Wall -g
 all: connections
 # main
 connections: $(OBJECTS_MAIN) my_mat
-	$(cc) $(FLAGS) -o connections $(OBJECTS_MAIN) ./my_mat
+	$(cc) $(FLAGS) -o connections $(OBJECTS_MAIN) ./my_mat -lm
 
 # lib
 my_mat: $(OBJECTS_LIB1)

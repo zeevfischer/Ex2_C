@@ -31,12 +31,12 @@ int main()
             case 'B':
                 scanf("%d%d",&i,&j);
                 bool ans = is_path(*mat,i,j);
-                printf(ans ? "True \n" : "False \n");
+                printf(ans ? "True\n" : "False\n");
                 break;
             case 'C':
                 scanf("%d%d",&i,&j);
                 int C =length(*mat,i,j);
-                printf("%d \n",C);
+                printf("%d\n",C);
                 break;
             case 'D':
                 break;

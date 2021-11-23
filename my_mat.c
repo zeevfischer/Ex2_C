@@ -2,30 +2,21 @@
 #include "my_mat.h"
 #include <math.h>
 #include <stdbool.h>
-void print(int *p)
-{
-    for(int i =0; i < 10;i++)
-    {
-        for(int j =0; j < 10;j++)
-        {
-            printf("%d ",*p);
-            p++;
-        }
-        printf("\n");
-    }
-    printf("\n");
-}
-// A
-void build_mat(int *p)
-{   
-    int temp;
-    for(int i = 0; i < 100; i++)
-    {
-        scanf("%d",&temp);
-        *p = temp;
-        p++;
-    }
-}
+// print for me not to use
+// void print(int *p)
+// {
+//     for(int i =0; i < 10;i++)
+//     {
+//         for(int j =0; j < 10;j++)
+//         {
+//             printf("%d ",*p);
+//             p++;
+//         }
+//         printf("\n");
+//     }
+//     printf("\n");
+// }
+
 // help B
 void swap(int *p1,int *p2)
 {
@@ -48,20 +39,17 @@ void swap(int *p1,int *p2)
 // help B
 void copy(int *p1,int *p2)
 {
-    // int temp;
     for(int i=0; i<10;i++)
     {
         for(int j=0;j<10;j++)
         {
-            // temp = *p1;
-            // *p2 = temp;
             *p2 = *p1;
             p1++;
             p2++;
         }
     }
 }
-// help to B C
+// help to B,C
 int calk(int *p,int i1, int j1)
 {
     int calk1;
@@ -111,14 +99,21 @@ int calk(int *p,int i1, int j1)
                 }
             }
         }
-        // print(*A0);
-        // print(*A1);
         swap(*A0,*A1);
-        // print(*A0);
-        // print(*A1);
     }
     // at the end my final one will be A0
     return A0[i1][j1];
+}
+// A
+void build_mat(int *p)
+{   
+    int temp;
+    for(int i = 0; i < 100; i++)
+    {
+        scanf("%d",&temp);
+        *p = temp;
+        p++;
+    }
 }
 // B
 bool is_path(int *p,int i1, int j1)
